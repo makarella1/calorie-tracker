@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>TrackCal</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper container">
+      <a class="brand-logo center" href="#">TrackCal</a>
+      <ul class="right">
+        <button class="btn pink accent-4 hide-on-small-and-down clear-btn ">Clear All</button>
+      </ul>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Add Meal / Food Item</span>
+        <form class="item-form col">
+          <div class="row">
+            <div class="input-field col s6">
+              <label for="meal">Meal</label>
+              <input type="text" id="meal" placeholder="Add Meal">
+            </div>
+            <div class="input-field col s6">
+              <label for="calories">Calories</label>
+              <input type="number" min="0" id="calories" placeholder="Add Calories">
+            </div>
+          </div>
+          <button class="add-btn btn red lighten-2"><i class="fa-solid fa-plus"></i>Add To List</button>
+          <button class="edit-btn btn purple accent-4"><i class="fa-solid fa-pencil"></i>Update Meal</button>
+          <button class="delete-btn btn red accent-4"><i class="fa-solid fa-trash-can"></i>Delete Meal</button>
+          <button class="back-btn btn blue lighten-2 right"><i class="fa-solid fa-rotate-left"></i>Back</button>
+      </div>
+      </form>
+    </div>
+    </form>
+    </div>
+    </div>
+    <h3 class="center-align">Total Calories: <span class="total-calories"><strong>0</strong></span></h3>
+    <ul class="collection"></ul>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
