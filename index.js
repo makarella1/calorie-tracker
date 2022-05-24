@@ -78,7 +78,7 @@ const ItemController = (() => {
   function addItem(name, calories) {
     let ID;
 
-    const items = StorageController.getItems();
+    const items = getItems();
 
     if (items.length === 0) {
       ID = 0;
@@ -98,7 +98,7 @@ const ItemController = (() => {
   function getTotalCalories() {
     let total = 0;
 
-    const items = StorageController.getItems();
+    const items = getItems();
 
     items.forEach((item) => (total += item.calories));
 
@@ -108,7 +108,7 @@ const ItemController = (() => {
   }
 
   function getItemById(id) {
-    const items = StorageController.getItems();
+    const items = getItems();
 
     const item = items.find((item) => item.id === id);
 
